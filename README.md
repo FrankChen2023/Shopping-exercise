@@ -1,1 +1,6 @@
-# Shopping-exercise
+#### Shopping-exercise
+
+作业练习  
+  
+一个完整的全面的web-app制作，随机的参数变量，数据转换并分类处理展现  
+1.完全的制作结构及内容
