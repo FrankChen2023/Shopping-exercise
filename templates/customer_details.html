@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>Acme Shopping: Customers</title>
+</head>
+<body>
+ 
+    <h1>Acme Shopping: Customer Details</h1>
+    
+    <p>Customer: 
+       <b> {{customer[0]["id"]}}</b> |  
+       {{customer[0]["name"]}} |
+        {{ customer[0]["email"]}} |
+       {{customer[0]['address']}}	
+    </p>
+    <p>Details of orders for {{customer[0]["name"]}}:</p>
+    {% for order in orders %}
+    <p> Order:
+      <b> <a href={{ url_for('order_details', id= order['id']) }}>{{order["id"]}}</a></b> |  
+    </p>
+    {% endfor %}
+</body>
+</html>
